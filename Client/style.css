@@ -1,13 +1,21 @@
 /* Import in your CSS */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
-* {
-  background-color: peru;
-}
-
 .sound-button {
   width: 100px;
   height: 100px;
+}
+
+
+body {
+  background-color: azure;
+}
+.change-body {
+  background-color: orange;
+}
+
+.change-body-dark {
+  background-color: red;
 }
 
 
@@ -34,4 +42,5 @@
 .change-body{
   background-color: azure;
 }
+
 
