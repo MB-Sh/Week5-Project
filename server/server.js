@@ -39,18 +39,32 @@ app.get("/", (request, response) => {
 // });
 
 // you need to use SQL queries and parameters in these routes
-// GET route
-app.get("/get-login", async (request, response) => {
-  response.json({
-    message: "you are looking at my new get endpoint. how rude",
-  });
-  const bodyData = request.body;
-  console.log(bodyData);
+// !GET route
 
-  const query = await db.query(
-    `SELECT preferences FROM preferences WHERE username = $1`,
-    ["Mary"]
-  );
-  response.json(query.rows);
-  console.log(response.json(query.rows));
+app.post("/get-login", async (request, response) => {
+//   response.json({
+//     message: "you are looking at my new get endpoint. how rude",
+//   });
+//   const bodyData = request.body;
+//   console.log(bodyData);
+
+const{username} = request.body
+try{
+  const result = await db.query
+    (`SELECT preferences FROM preferences WHERE username = $1`,
+     [username]);
+//  ) 
+  if(
+    result.rows.length >0){
+        return response.json ({preferences:result.rows[0].preferences});
+    }
+    else{
+        return response.status(404).json({error: "User not found"});
+    }
+    } catch(err){console.error(err);
+        return response.status(500).json({error: "Internal server error"});
+    }
+  
+//   response.json(query.rows);
+//   console.log(response.json(query.rows));
 });
