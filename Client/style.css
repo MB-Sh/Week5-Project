@@ -9,3 +9,23 @@
   width: 100px;
   height: 100px;
 }
+
+#happy-button {
+  color: yellow;
+}
+
+#calm-button {
+  color: aqua;
+}
+
+#neutral-button {
+  color: whitesmoke;
+}
+
+#sad-button {
+  color: grey;
+}
+
+#angry-button {
+  color: red;
+}
