@@ -10,6 +10,7 @@
   height: 100px;
 }
 
+
 #happy-button {
   color: yellow;
 }
@@ -29,3 +30,8 @@
 #angry-button {
   color: red;
 }
+
+.change-body{
+  background-color: azure;
+}
+
