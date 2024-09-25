@@ -6,7 +6,6 @@
   height: 100px;
 }
 
-
 body {
   background-color: azure;
 }
@@ -17,7 +16,6 @@ body {
 .change-body-dark {
   background-color: red;
 }
-
 
 #happy-button {
   color: yellow;
@@ -38,9 +36,3 @@ body {
 #angry-button {
   color: red;
 }
-
-.change-body{
-  background-color: azure;
-}
-
-
