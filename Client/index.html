@@ -6,30 +6,36 @@
     <link rel="stylesheet" href="./style.css" />
     <script type="module" src="./app.js" defer></script>
     <title>Project Name</title>
-    <header><h1>Mood Page</h1></header>
-    <section>
-      <form id="login-form">
-        <label for="username">username</label>
-        <input type="text" name="username" id="username-input" />
-        <button type="submit">Submit</button>
-      </form>
-      <p id="preferencesOutput"></p>
-    </section>
-    <section>
-      <button id="happy-button" class="sound-button">happy</button>
-      <button id="calm-button" class="sound-button">calm</button>
-      <button id="neutral-button" class="sound-button">neutral</button>
-      <button id="sad-button" class="sound-button">sad</button>
-      <button id="angry-button" class="sound-button">angry</button>
-      <div>
-        <button id="happy-button" class="sound-button-dark">happy</button>
-        <button id="calm-button" class="sound-button-dark">calm</button>
-        <button id="neutral-button" class="sound-button-dark">neutral</button>
-        <button id="sad-button" class="sound-button-dark">sad</button>
-        <button id="angry-button" class="sound-button-dark">angry</button>
+  </head>
+  <body>
+    <header>
+      <section id="login-form-section">
+        <form id="login-form">
+          <label for="username">username</label>
+          <input type="text" name="username" id="username-input" />
+          <button type="submit">Submit</button>
+        </form>
+        <p id="preferencesOutput"></p>
+      </section>
+      <h1>Mood Page</h1>
+    </header>
+
+    <section id="button-section">
+      <div id="top-section">
+        <button id="happy-button" class="sound-button">happy</button>
+        <button id="calm-button" class="sound-button">calm</button>
+      </div>
+
+      <div id="middle-section">
+        <button id="neutral-button" class="sound-button">neutral</button>
+      </div>
+
+      <div id="bottom-section">
+        <button id="sad-button" class="sound-button">sad</button>
+        <button id="angry-button" class="sound-button">angry</button>
       </div>
     </section>
-    <section></section>
+    <section>
       <form id="new-user-form">
         <label for="username">username</label>
         <input type="text" name="username" id="new-user-input" />
@@ -40,8 +46,6 @@
         </select>
         <button type="submit">Submit</button>
       </form>
-      
     </section>
-  </head>
-  <body></body>
+  </body>
 </html>

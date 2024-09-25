@@ -1,38 +1,128 @@
 /* Import in your CSS */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
-.sound-button {
-  width: 100px;
-  height: 100px;
-}
-
 body {
+  position: relative;
+  display: grid;
+  grid-template-rows: 2fr 7fr 3fr;
+  justify-content: center;
+  align-items: center;
   background-color: azure;
 }
+
 .change-body {
-  background-color: orange;
+  background-color: beige;
 }
 
 .change-body-dark {
-  background-color: red;
+  background-color: rgb(126, 115, 115);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#login-form-section {
+  /* position: absolute;
+  top: 10px;
+  left: 0; */
+}
+
+#button-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+#middle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+#bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.sound-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+  cursor: pointer;
+  transition: 1s;
+  /* border-image-source: linear-gradient(rgb(35, 0, 0), rgb(223, 223, 225));
+  border-style: solid;
+
+  border-image-slice: 1; */
+}
+
+.sound-button:hover {
+  font-weight: 500px;
+  width: 170px;
+  height: 170px;
+  border-width: 10px;
+  border-style: solid;
+}
+
+.sound-button:hover::after {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.7);
 }
 
 #happy-button {
-  color: yellow;
+  background-color: rgb(235, 235, 157);
+}
+#happy-button:hover {
+  background-color: rgb(236, 236, 68);
 }
 
 #calm-button {
-  color: aqua;
+  background-color: rgb(171, 244, 244);
+}
+#calm-button:hover {
+  background-color: aqua;
 }
 
 #neutral-button {
-  color: whitesmoke;
+  background-color: rgb(184, 239, 166);
+}
+#neutral-button:hover {
+  background-color: rgb(153, 229, 91);
 }
 
 #sad-button {
-  color: grey;
+  background-color: rgb(207, 204, 204);
+}
+#sad-button:hover {
+  background-color: grey;
 }
 
 #angry-button {
-  color: red;
+  background-color: rgb(236, 160, 160);
+}
+#angry-button:hover {
+  background-color: red;
 }
