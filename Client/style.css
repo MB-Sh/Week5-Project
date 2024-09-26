@@ -81,6 +81,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   gap: 100px;
+  flex-wrap: wrap;
 }
 
 #middle-section {
@@ -89,6 +90,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 100px;
+  flex-wrap: wrap;
 }
 
 #bottom-section {
@@ -97,6 +99,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   gap: 100px;
+  flex-wrap: wrap;
 }
 
 .sound-button {
@@ -112,7 +115,8 @@ h1 {
   font-weight: normal;
   position: relative;
   text-transform: capitalize;
-  background-size: 40px 40px; /* Adjust dot spacing */
+  /* Adjust dot spacing */
+  background-size: 40px 40px; 
   background-position: center;
   background-image: radial-gradient(rgb(255, 255, 255) 10%, transparent 10%), /* tiny dots */
   radial-gradient(rgb(255, 255, 255) 10%, transparent 10%);
