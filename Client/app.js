@@ -52,11 +52,11 @@ document
   });
 
 // assigning sounds to a const variable
-const happySound = new Audio("./assets/sound1.mp3");
-const calmSound = new Audio("./assets/sound2.wav");
-const neutralSound = new Audio("./assets/sound3.wav");
-const sadSound = new Audio("./assets/sound4.wav");
-const angrySound = new Audio("./assets/sound5.wav");
+const happySound = new Audio("/sound1.mp3");
+const calmSound = new Audio("/sound2.wav");
+const neutralSound = new Audio("/sound3.wav");
+const sadSound = new Audio("/sound4.wav");
+const angrySound = new Audio("/sound5.wav");
 
 // get button elements
 const happyButton = document.getElementById("happy-button");
