@@ -23,7 +23,7 @@ document
     const username = document.getElementById("username-input").value;
 
     // Use fetch to send data to the server
-    const response = await fetch("http://localhost:8080/get-login", {
+    const response = await fetch("https://week5-project.onrender.com/get-login", {
       method: "POST", // Switch to POST because we're sending data
       headers: {
         "Content-Type": "application/json",
@@ -122,7 +122,7 @@ function handleSubmit(event) {
   const formValues = Object.fromEntries(formData);
   console.log(formValues);
 
-  fetch("http://localhost:8080/new-user", {
+  fetch("https://week5-project.onrender.com/new-user", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
