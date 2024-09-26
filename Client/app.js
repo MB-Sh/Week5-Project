@@ -53,11 +53,11 @@ document
   });
  
 // assigning sounds to a const variable
-const happySound = new Audio("/sounds/sound1.mp3");
-const calmSound = new Audio("/sounds/sound2.wav");
-const neutralSound = new Audio("/sounds/sound3.wav");
-const sadSound = new Audio("/sounds/sound4.wav");
-const angrySound = new Audio("/sounds/sound5.wav");
+const happySound = new Audio("https://week5-project.onrender.com/sounds/sound1.mp3");
+const calmSound = new Audio("https://week5-project.onrender.com/sounds/sound2.wav");
+const neutralSound = new Audio("https://week5-project.onrender.com/sounds/sound3.wav");
+const sadSound = new Audio("https://week5-project.onrender.com/sounds/sound4.wav");
+const angrySound = new Audio("https://week5-project.onrender.com/sounds/sound5.wav");
 
 // get button elements
 const happyButton = document.getElementById("happy-button");
