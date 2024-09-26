@@ -51,7 +51,7 @@ document
     document.getElementById("login-form").reset();
     closeForm();
   });
-
+ 
 // assigning sounds to a const variable
 const happySound = new Audio("/sounds/sound1.mp3");
 const calmSound = new Audio("/sounds/sound2.wav");
