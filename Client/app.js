@@ -1,6 +1,5 @@
 console.log("Hello Everyone");
 
-app.use("/sounds", express.static("./public"));
 const bodyPreference = document.querySelector("main");
 const welcomeMessage = document.getElementById("welcome-message");
 

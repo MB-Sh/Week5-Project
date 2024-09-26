@@ -1,4 +1,5 @@
 console.log("Testing");
+
 import express from "express";
 import cors from "cors";
 import pg from "pg";
@@ -15,6 +16,8 @@ app.use(express.json());
 
 //tell my express app to use cors
 app.use(cors());
+
+app.use("/sounds", express.static(path.join(__dirname, "public/sounds")));
 
 // i need to set up a PORT for my app to listen
 const PORT = 8080;
