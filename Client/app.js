@@ -1,4 +1,6 @@
 console.log("Hello Everyone");
+
+app.use("/sounds", express.static("./public"));
 const bodyPreference = document.querySelector("main");
 const welcomeMessage = document.getElementById("welcome-message");
 
@@ -52,11 +54,11 @@ document
   });
 
 // assigning sounds to a const variable
-const happySound = new Audio("/sound1.mp3");
-const calmSound = new Audio("/sound2.wav");
-const neutralSound = new Audio("/sound3.wav");
-const sadSound = new Audio("/sound4.wav");
-const angrySound = new Audio("/sound5.wav");
+const happySound = new Audio("/sounds/sound1.mp3");
+const calmSound = new Audio("/sounds/sound2.wav");
+const neutralSound = new Audio("/sounds/sound3.wav");
+const sadSound = new Audio("/sounds/sound4.wav");
+const angrySound = new Audio("/sounds/sound5.wav");
 
 // get button elements
 const happyButton = document.getElementById("happy-button");
