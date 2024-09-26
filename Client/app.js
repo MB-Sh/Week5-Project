@@ -52,7 +52,7 @@ document
   });
 
 // assigning sounds to a const variable
-const happySound = new Audio("./assets/sound1.wav");
+const happySound = new Audio("./assets/sound1.mp3");
 const calmSound = new Audio("./assets/sound2.wav");
 const neutralSound = new Audio("./assets/sound3.wav");
 const sadSound = new Audio("./assets/sound4.wav");
@@ -68,19 +68,41 @@ const angryButton = document.getElementById("angry-button");
 // create event handlers for our buttons
 function handleHappySound() {
   happySound.play();
+
+  setTimeout(() => {
+    happySound.pause();
+    happySound.currentTime = 0; // Reset the audio to the beginning
+  }, 3000);
 }
 function handleCalmSound() {
   calmSound.play();
+
+  setTimeout(() => {
+    calmSound.pause();
+    calmSound.currentTime = 0; // Reset the audio to the beginning
+  }, 3000);
 }
 function handleNeutralSound() {
   neutralSound.play();
+  setTimeout(() => {
+    neutralSound.pause();
+    neutralSound.currentTime = 0; // Reset the audio to the beginning
+  }, 3000);
 }
 function handleSadSound() {
   sadSound.play();
+  setTimeout(() => {
+    sadSound.pause();
+    sadSound.currentTime = 0; // Reset the audio to the beginning
+  }, 3000);
 }
 
 function handleAngrySound() {
   angrySound.play();
+  setTimeout(() => {
+    angrySound.pause();
+    angrySound.currentTime = 0; // Reset the audio to the beginning
+  }, 3000);
 }
 
 // event listeners for our button
