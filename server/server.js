@@ -5,7 +5,7 @@ import cors from "cors";
 import pg from "pg";
 import dotenv from "dotenv";
 
-const path = require("path");
+import path from "path";
 // initialise express
 const app = express();
 
