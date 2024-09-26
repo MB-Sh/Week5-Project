@@ -3,49 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/smiley.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <script type="module" src="./app.js" defer></script>
-    <title>Project Name</title>
+    <title>Mood Click</title>
   </head>
   <body>
-    <header>
-      <section id="login-form-section">
-        <form id="login-form">
-          <label for="username">username</label>
-          <input type="text" name="username" id="username-input" />
-          <button type="submit">Submit</button>
-        </form>
-        <p id="preferencesOutput"></p>
-      </section>
-      <h1>Mood Page</h1>
-    </header>
-
-    <section id="button-section">
-      <div id="top-section">
-        <button id="happy-button" class="sound-button">happy</button>
-        <button id="calm-button" class="sound-button">calm</button>
-      </div>
-
-      <div id="middle-section">
-        <button id="neutral-button" class="sound-button">neutral</button>
-      </div>
-
-      <div id="bottom-section">
-        <button id="sad-button" class="sound-button">sad</button>
-        <button id="angry-button" class="sound-button">angry</button>
-      </div>
-    </section>
-    <section>
-      <form id="new-user-form">
+    <section id="login-form-section" class="pop-up-form">
+      <h2>Enter username if you already have one</h2>
+      <form id="login-form">
         <label for="username">username</label>
-        <input type="text" name="username" id="new-user-input" />
-        <label for="preference">preference</label>
-        <select id="new-preference-option" name="preference">
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
+        <input type="text" name="username" id="username-input" />
         <button type="submit">Submit</button>
       </form>
     </section>
+    <main id="main-content">
+      <header>
+        <h1 id="welcome-message"></h1>
+        <h1>Mood Click</h1>
+      </header>
+
+      <section id="button-section">
+        <div id="top-section">
+          <button id="happy-button" class="sound-button">happy</button>
+          <button id="calm-button" class="sound-button">calm</button>
+        </div>
+
+        <div id="middle-section">
+          <button id="neutral-button" class="sound-button">neutral</button>
+        </div>
+
+        <div id="bottom-section">
+          <button id="sad-button" class="sound-button">sad</button>
+          <button id="angry-button" class="sound-button">angry</button>
+        </div>
+      </section>
+      <section id="new-form-section">
+        <h3>Add new user</h3>
+        <form id="new-user-form">
+          <label for="username">username</label>
+          <input type="text" name="username" id="new-user-input" />
+          <label for="preference">preference</label>
+          <select id="new-preference-option" name="preference">
+            <option value="light">light</option>
+            <option value="dark">dark</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
