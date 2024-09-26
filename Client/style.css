@@ -195,16 +195,15 @@ h1 {
 @media (max-width: 600px) {
   main {
     border-style: none;
-    display: grid;
+    /*display: grid;*/
     grid-template-rows: 1fr 10fr 1fr;
     /* justify-content: center; */
     /* align-items: center; */
-    background-color: azure;
+    /*background-color: azure;*/
   }
 
   header {
     flex-direction: column;
-    height: 5%;
     gap: 1rem;/* chnaged header from 0 */
   }
 
