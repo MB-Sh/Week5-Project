@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 * {
-  font-family: Cabin, sans-serif;
+  font-family: "Merienda", cursive;
 }
 
 .blur {
@@ -112,6 +112,11 @@ h1 {
   font-weight: normal;
   position: relative;
   text-transform: capitalize;
+  background-size: 40px 40px; /* Adjust dot spacing */
+  background-position: center;
+  background-image: radial-gradient(rgb(255, 255, 255) 10%, transparent 10%), /* tiny dots */
+  radial-gradient(rgb(255, 255, 255) 10%, transparent 10%);
+  background-size: 10px 10px, 10px 10px;
 }
 
 .sound-button:hover {
@@ -133,6 +138,7 @@ h1 {
 
 #happy-button {
   background-color: rgb(235, 235, 157);
+  
 }
 #happy-button:hover {
   background-color: rgb(236, 236, 68);
