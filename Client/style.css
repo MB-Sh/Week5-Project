@@ -73,23 +73,32 @@ h1 {
   height: 150px;
   border-radius: 25%;
   cursor: pointer;
-  transition: 1s;
-  /* border-image-source: linear-gradient(rgb(35, 0, 0), rgb(223, 223, 225));
-  border-style: solid;
-
-  border-image-slice: 1; */
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  font-size: 1.2rem;
+  font-weight: normal;
+  position: relative;
+  text-transform: capitalize;
 }
 
 .sound-button:hover {
-  font-weight: 500px;
   width: 170px;
   height: 170px;
-  border-width: 10px;
-  border-style: solid;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 0, 255, 0.6);
+  transition: all 0.3s ease;
+  font-size: 1.8rem; 
+  font-weight: bold; 
 }
 
 .sound-button:hover::after {
-  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.7);
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  
 }
 
 #happy-button {
@@ -126,3 +135,4 @@ h1 {
 #angry-button:hover {
   background-color: red;
 }
+
